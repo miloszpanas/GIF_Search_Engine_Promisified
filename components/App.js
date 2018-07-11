@@ -14,11 +14,11 @@ App = React.createClass({
         this.setState({
           loading: true  // 2 sygnalizacja procesu ladowania
         });
-        this.getGif(searchingText).then((gif) => {  // 3 - rozpoczęcie pobierania gifa
+        this.getGif(searchingText).then((gif) => {  // 3 - rozpoczęcie pobierania gifa  // wywołanie promisa z linijki 27 poprzez then
           this.setState({  // 4 - przy ukończeniu pobierania:
             loading: false,  // a - zakończ ladowanie 
             gif: gif,  // b - ustaw nowego gifa z wyniku pobierania
-            searchingText: searchingText  // c - ustaw nowy stan dla wyszukiwanego tekstu
+            searchingText: searchingText  // c - ustaw nowy stan dla wyszukiwanego tekstu 
           });
         });
     },
