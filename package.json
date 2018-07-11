@@ -1,0 +1,29 @@
+{
+  "name": "zadanie-15.4_es6_syntax_exercises",
+  "version": "1.0.0",
+  "description": "ES6 syntax exercises",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel script.js --watch --out-file script-compiled.js",
+    "ignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "live": "node_modules/.bin/browser-sync start --server --files css/*.css *.html js/*.js *.js",
+    "sass": "node-sass --output-style nested --source-map true -o css sass --watch",
+    "dev": "npm-run-all -p sass live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miloszpanas/"
+  },
+  "author": "Miłosz Panas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.24.5",
+    "node-sass": "^4.9.1",
+    "npm-run-all": "^4.1.3"
+  },
+  "dependencies": {}
+}
